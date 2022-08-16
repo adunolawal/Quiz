@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "question" : "What is the capital of Nigeria?",
+            "options" : [ "Lagos", "Kano",  "Abuja",  "Delta" ],
+            "answer" :"Abuja"
+        },
+        {
+            "question" : "what is the building block of the web?",
+            "options" : [ "CSS", "JavaScript",  "HTML", "React JS" ],
+            "answer" : "HTML"
+        },
+        {
+            "question" : "what is your name?",
+            "options" : [ "Sola", "JavaScript",  "HTML", "React JS" ],
+            "answer" : "HTML"
+        },
+        {
+            "question" : "how are you?",
+            "options" : [ "fine", "Not so fine",  "HTML", "React JS" ],
+            "answer" : "HTML"
+        }
+    ]
+}
