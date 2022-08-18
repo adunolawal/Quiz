@@ -13,6 +13,8 @@
   border-radius: 5px;
   padding: 1rem 5rem 1rem 5rem;
   color: aliceblue;
+  font-family: cursive;
+  font-size: 1.5rem;
 }
 .App label {
   display: block;
@@ -20,7 +22,7 @@
   padding: 15px;
   margin-bottom: 5px;
   font-size: 20px;
-  background-color: antiquewhite;
+  background-color: skyblue;
   padding: 1rem 8rem 1rem 2rem;
 }
 .App label.radio+.radio {

@@ -8,7 +8,7 @@ const Questions = (props) => {
 
     const changeHandler = (e) => {
         setSelected(e.target.value)
-        if(error){
+        if(error){ 
             setError("")
         }
     }
@@ -48,7 +48,7 @@ const Questions = (props) => {
             </div>
            {error &&  <div>
                 {error}
-            </div>}
+            </div> }
             <button onClick={nextQuestionHandler} > Next</button>
         </div>
      );

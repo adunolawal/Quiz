@@ -1,9 +1,9 @@
 {
     "data": [
         {
-            "question" : "What is the capital of Nigeria?",
-            "options" : [ "Lagos", "Kano",  "Abuja",  "Delta" ],
-            "answer" :"Abuja"
+            "question" : "Who is the president of Nigeria?",
+            "options" : [ "Mr Lagos", "Mr Buhari",  "Mr Abuja",  "Mrs Delta" ],
+            "answer" : "Mr Lagos"
         },
         {
             "question" : "what is the building block of the web?",
@@ -12,13 +12,13 @@
         },
         {
             "question" : "what is your name?",
-            "options" : [ "Sola", "JavaScript",  "HTML", "React JS" ],
-            "answer" : "HTML"
+            "options" : [ "Sola", "Bola",  "Fola", "React JS" ],
+            "answer" : "React JS"
         },
         {
             "question" : "how are you?",
-            "options" : [ "fine", "Not so fine",  "HTML", "React JS" ],
-            "answer" : "HTML"
+            "options" : [ "fine", "Not so fine",  "happy", "sapa nice one" ],
+            "answer" : "sapa nice one"
         }
     ]
 }

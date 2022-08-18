@@ -10,7 +10,6 @@ const Quiz = () => {
     const [nextStep, setNextStep] = useState(1);
     const [activeQuestion, setActiveQuestion] = useState(0);
     const [answers, setAnswers] = useState([])
-    const [ setTime] = useState(0)
 
     const startQuiz = () => {
         setNextStep(2)
@@ -19,7 +18,6 @@ const Quiz = () => {
         setActiveQuestion(0)
         setAnswers([])
         setNextStep(2)
-        setTime(0)
     }
 
     return ( 
