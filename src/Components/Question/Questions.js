@@ -1,10 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
+import Frame from '../Images/Frame.svg';
 
 const Questions = (props) => {
 
     const [selected, setSelected] = useState("");
     const [error, setError] = useState("")
     const radiosWrapper = useRef()
+    const [popUp, setPopUp] = useState(false)
 
     const changeHandler = (e) => {
         setSelected(e.target.value)
@@ -19,6 +21,10 @@ const Questions = (props) => {
         }
     },[props.data])
 
+    const togglepopUp = () =>{
+        setPopUp(!popUp)
+    }
+
     const nextQuestionHandler = (e) => {
        if(selected === "") {
         return setError("Please select one option!")
@@ -32,24 +38,45 @@ const Questions = (props) => {
         props.setNextStep(3)
        }
     }
+    const end = () => {
+        props.setNextStep(3)
+    }
 
     return ( 
-        <div>
-            <h2>{props.data.question}</h2>
-            <div ref={radiosWrapper}>
-            {
-               props.data.options.map((choice, i) => (
-                <label key={i} > 
-                    <input type="radio" name="answer" value={choice} onChange ={changeHandler} />
-                    {choice}
-                </label>
-                )
-            )}
+        <div className="questions">
+            <div onClick={togglepopUp} className="end">Quit</div>
+            {popUp && 
+            <div>
+                <div className="bgnd" onClick={togglepopUp}> </div>
+                <div className="modal">
+                    Are you sure you want to end quiz 
+                    <div className="btns"> 
+                        <div className="btn-b1"  onClick={togglepopUp}> Continue </div>
+                        <div className="btn-b1" onClick={end} > End Quiz </div>   
+                    </div>
+                </div>
             </div>
-           {error &&  <div>
-                {error}
-            </div> }
-            <button onClick={nextQuestionHandler} > Next</button>
+            }
+           <div className="questions1">
+                <img className="framey" src={Frame} alt='loading..'></img>
+                <div className="questions2">
+                    <h2>{props.data.question}</h2>
+                    <div ref={radiosWrapper}>
+                        {
+                        props.data.options.map((choice, i) => (
+                            <label key={i} > 
+                                <input type="radio" name="answer" value={choice} onChange ={changeHandler} />
+                                {choice}
+                            </label>
+                            )
+                        )}
+                    </div>
+                    {error &&  <div>
+                            {error}
+                        </div> }
+                    <button onClick={nextQuestionHandler} > Next</button>
+                </div>
+           </div>
         </div>
      );
 }

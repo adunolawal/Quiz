@@ -6,17 +6,17 @@
             "answer" : "Mr Lagos"
         },
         {
-            "question" : "what is the building block of the web?",
+            "question" : "What is the building block of the web?",
             "options" : [ "CSS", "JavaScript",  "HTML", "React JS" ],
             "answer" : "HTML"
         },
         {
-            "question" : "what is your name?",
+            "question" : "What is your name?",
             "options" : [ "Sola", "Bola",  "Fola", "React JS" ],
             "answer" : "React JS"
         },
         {
-            "question" : "how are you?",
+            "question" : "How are you?",
             "options" : [ "fine", "Not so fine",  "happy", "sapa nice one" ],
             "answer" : "sapa nice one"
         }

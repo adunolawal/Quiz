@@ -1,8 +1,8 @@
 const  Start = (props) => {
     return ( 
-        <div>
-            <h1>WELCOME </h1>
-            <h1>Start the Quiz</h1>
+        <div className="start">
+            <h1 className="welcome">WELCOME TO THEQUIZAPP</h1>
+            <h2>Start the Quiz</h2>
             <p>Good luck!</p>
             <button onClick={props.startQuiz} > Start</button>
         </div>

@@ -25,7 +25,7 @@ const EndQuiz = (props) => {
     },[props.results, props.data])
 
     return ( 
-        <div>
+        <div className="endquiz">
             <h1>Result</h1>
             <h2>You scored</h2>
             <h4> {correctAnswers} out of {props.data.length}</h4>
