@@ -11,14 +11,14 @@
             "answer" : "HTML"
         },
         {
-            "question" : "What is your name?",
-            "options" : [ "Sola", "Bola",  "Fola", "React JS" ],
-            "answer" : "React JS"
+            "question" : "Which planet in the Milky Way is the hottest? ",
+            "options" : [ "Venus", "Saturn",  "Mercury", "Uranus" ],
+            "answer" : "Venus"
         },
         {
-            "question" : "How are you?",
-            "options" : [ "fine", "Not so fine",  "happy", "sapa nice one" ],
-            "answer" : "sapa nice one"
+            "question" : "How many bones do we have in an ear?",
+            "options" : [ "5", "3",  "25", "15" ],
+            "answer" : "3"
         }
     ]
 }

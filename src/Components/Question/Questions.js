@@ -14,6 +14,7 @@ const Questions = (props) => {
             setError("")
         }
     }
+
     useEffect( () => {
         const checkedInput = radiosWrapper.current.querySelector('input:checked');
         if(checkedInput) {
@@ -83,5 +84,3 @@ const Questions = (props) => {
  
 export default Questions;
 
-
-// { Math.random()*4 + 1 }
