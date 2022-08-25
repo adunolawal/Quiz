@@ -5,6 +5,7 @@ const EndQuiz = (props) => {
     const [correctAnswers, setCorrectAnswers] = useState(0)
     const [message, setMessage] = useState("")
 
+    // calculating results
     useEffect(() => {
         let correct = 0
         props.results.forEach((result,index) => {

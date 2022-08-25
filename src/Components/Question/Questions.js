@@ -22,10 +22,12 @@ const Questions = (props) => {
         }
     },[props.data])
 
+    // modal popup
     const togglepopUp = () =>{
         setPopUp(!popUp)
     }
 
+    // handling display of next questions
     const nextQuestionHandler = (e) => {
        if(selected === "") {
         return setError("Please select one option!")
@@ -46,6 +48,7 @@ const Questions = (props) => {
     return ( 
         <div className="questions">
             <div onClick={togglepopUp} className="end">Quit</div>
+            {/* modal popup display */}
             {popUp && 
             <div>
                 <div className="bgnd" onClick={togglepopUp}> </div>
@@ -58,6 +61,8 @@ const Questions = (props) => {
                 </div>
             </div>
             }
+
+            {/* displaying questions */}
            <div className="questions1">
                 <img className="framey" src={Frame} alt='loading..'></img>
                 <div className="questions2">
