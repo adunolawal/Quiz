@@ -14,6 +14,8 @@ const Quiz = () => {
     const startQuiz = () => {
         setNextStep(2)
     }
+
+    //handles reset of quiz
     const reset =() =>{
         setActiveQuestion(0)
         setAnswers([])
